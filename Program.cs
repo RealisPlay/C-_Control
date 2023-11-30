@@ -14,3 +14,16 @@ string[] name = { "Ольга", "Андрей", "Яна", "Никита", "Зо�
 
 int length = ArrayLength(name);
 string[] shortName = new string[length];
+
+int ArrayLength(string[] str) //Метод для нахождения длины для нового массива
+{
+    int count = 0;
+    for (int i = 0; i < str.Length; i++)
+    {
+        if (str[i].Length <= 3)
+        {
+            count++;
+        }
+    }
+    return count;
+}
